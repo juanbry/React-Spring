@@ -5,7 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 @Entity
 @Table(name = "notes")
@@ -20,7 +21,7 @@ public class Note {
     private String titulo;
     @Column(columnDefinition = "TEXT")
     private String contenido;
-    private LocalDateTime fechaCreacion;
+    private LocalDate fechaCreacion;
     private String autor;
 
 
