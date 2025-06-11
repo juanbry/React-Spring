@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Container, Paper, TextField, Button, Typography, Box, Avatar } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { motion } from 'framer-motion';
+//import { motion } from 'framer-motion';
 
 const Login = ({ onLogin }) => {
   const [form, setForm] = useState({ usuario: '', password: '' });

@@ -71,7 +71,7 @@ const KanbanBoard = () => {
     <Box sx={{ width: '100%', mt: 2, mb: 4 }}>
       <DragDropContext onDragEnd={onDragEnd}>
         <Grid container spacing={3}>
-          {estados.map((estado, colIdx) => (
+          {estados.map((estado) => (
             <Grid item xs={12} md={4} key={estado.label}>
               <Paper elevation={3} sx={{ p: 2, borderRadius: 4, minHeight: 400, background: '#fff', boxShadow: '0 4px 16px rgba(0,0,0,0.08)' }}>
                 <Typography variant="h6" sx={{ fontWeight: 700, color: '#b71c1c', mb: 2, letterSpacing: 1, textAlign: 'center' }}>
